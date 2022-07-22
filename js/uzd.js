@@ -1,4 +1,5 @@
 const nums = [-1, 5, 8, -20, 10, 12, -5, 14];
+const colors = ['red', 'green', 'blue', 'tomato'];
 
 // naudojan array.forEach()
 // 1. atspausdinti html paragrafe visus skaicius  <p id="para"></p>
@@ -15,3 +16,4 @@ const nums = [-1, 5, 8, -20, 10, 12, -5, 14];
 //   {value: -20}
 //   ...
 // ]
+// 8 extra(nebutinai forEach) padaryti kad paspaudus mygtuka <button id="btn">Daryk</button> mes imptume spalvas is color masyvo ir su jomis dazytume musu .container spalva. Jei daejom iki galo tai pradedam is naujo nuo pirmos spalvos
