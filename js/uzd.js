@@ -5,14 +5,18 @@ const paraEl = document.getElementById('para');
 
 // naudojan array.forEach()
 // 1. atspausdinti html paragrafe visus skaicius  <p id="para"></p>
-nums.forEach((value) => {
-  paraEl.append(value, ' ');
-});
+nums.forEach((value) => paraEl.append(value, ' '));
 // 2. atspausdinti html h2 elemente visus padalintus is 10 - <h2 id="h2"></h2>
 // 3. gauti ir atspausdinti nauja masyva kuriame visos reiksmes butu padaugintos is 3
 // 4. gauti ir atspausdinti nauja masyva kuriame visos reiksmes padaugintos is ju indexo.
 // 5. grazinti nauja masyva kuriame butu reikmes didesnes uz 9
-// 6.  grazinti ir atspausdinti consoleje visas neigiamas reiksmes
+const reiksmesDidesnesUz9 = [];
+nums.forEach((sk) => {
+  if (sk > 9) reiksmesDidesnesUz9.push(sk);
+});
+console.log('reiksmesDidesnesUz9 ===', reiksmesDidesnesUz9);
+// 6. grazinti ir atspausdinti consoleje visas neigiamas reiksmes
+// 6.1 is colors masyvo grazinti nauja masyva kuriame paskutine raide dizioji
 // 7. sukurti nauja masyva kuriame turetume masyva su objektais
 // [
 //   {value: -1},
