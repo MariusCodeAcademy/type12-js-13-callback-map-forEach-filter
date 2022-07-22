@@ -11,3 +11,20 @@ console.log('nums ===', nums);
 console.log('numsMap ===', numsMap);
 
 // console.log({ numsMap: numsMap, numsForEach });
+
+// 7. sukurti nauja masyva kuriame turetume masyva su objektais
+// [
+//   {value: -1},
+//   {value: 5},
+//   {value: 8}
+//   {value: -20}
+//   ...
+// ]
+// map naudojamas kai norim pakeisti struktura
+const objektuMaysvas = nums.map((sk, i) => {
+  const rez = {};
+  rez.value = sk;
+  rez.ind = i;
+  return rez;
+});
+console.log('objektuMaysvas ===', objektuMaysvas);
